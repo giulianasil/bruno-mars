@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fã Clube do Bruno Mars</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="https://th.bing.com/th/id/R.0c97b3e98334e174a8c96ab89a10cc3b?rik=oSWY2Uq1S0waDA&pid=ImgRaw&r=0" alt="Bruno Mars">
+            <div class="banner-text">
+                <h1>Bem-vindo ao Fã Clube Oficial do Bruno Mars!</h1>
+                <a href="assinatura.html" class="btn">Assine Agora</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Biografia</a></li>
+                <li><a href="#">Músicas</a></li>
+                <li><a href="assinatura.html">Assinatura</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sobre">
+        <h2>Sobre Bruno Mars</h2>
+        <p>Bruno Mars é um cantor, compositor e produtor musical americano. Conhecido por seus hits globais e performances ao vivo cheias de energia, ele é uma verdadeira estrela da música pop mundial.</p>
+        <img src="https://www.wallpapertip.com/wmimgs/44-445571_bruno-mars-wallpaper-hd-bruno-mars-4k.jpg" alt="Bruno Mars cantando">
+    </section>
+
+    <section class="call-to-action">
+        <h2>Assine para receber conteúdo exclusivo!</h2>
+        <a href="assinatura.html" class="btn">Saiba Mais</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fã Clube Bruno Mars. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinatura - Fã Clube Bruno Mars</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Seja um Assinante VIP</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Biografia</a></li>
+                <li><a href="#">Músicas</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="subscription">
+        <h2>Escolha seu Plano</h2>
+        <form action="processar_assinatura.php" method="POST">
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="plan">Plano de Assinatura:</label>
+            <select id="plan" name="plan">
+                <option value="mensal">Mensal(fotos de shows) - R$ 19,90</option>
+                <option value="trimestral">Trimestral -(musicas nao lançadas e fotos premium)R$ 49,90</option>
+                <option value="anual">Anual(musica offine a vontade, e fotos e videos 4k) - R$ 149,90</option>
+            </select>
+
+            <button type="submit" class="btn">Confirmar Assinatura</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fã Clube Bruno Mars. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
